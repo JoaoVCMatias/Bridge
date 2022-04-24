@@ -9,44 +9,52 @@ package bridge;
  * @author joaov
  */
 public class ModoNormal implements Modo {
-    protected Carro carro;
+    public Carro carro;
 
 		
     public ModoNormal() {}
 
     public ModoNormal(Carro carro) {
-            this.carro = carro;
+        this.carro = carro;
     }
 
     @Override
     public void ligarCarro() {
-            System.out.println("Bot�o de ligar pressionado");
-            carro.partida();
-            System.out.println("Vruuuum!!! O possante foi ligado");
+        System.out.println("Bot�o de ligar pressionado");
+        carro.partida();
+        System.out.println("Vruuuum!!! O possante foi ligado");
     }
 
     @Override
     public void alterarMarcha(String marcha) {
-            carro.setMarcha(marcha);
+        carro.setMarcha(marcha);
     }
 
     @Override
     public void ligarFarol() {
-            carro.ligarFarol();
+        carro.ligarFarol();
     }
 
     @Override
     public void desligarFarol() {
-            carro.desligarFarol();
+        carro.desligarFarol();
     }
 
     @Override
     public void acelerar() {
-            carro.acelerar(10);
+        this.carro.acelerar(10);
     }
 
     @Override
     public void frear() {
-            carro.frear(10);
+        carro.frear(10);
     }
+
+    @Override
+    public String toString() {
+        return "ModoNormal{" + "carro= " + carro + '}';
+    }
+    
+ 
+    
 }

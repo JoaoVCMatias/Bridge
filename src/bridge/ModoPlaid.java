@@ -16,4 +16,5 @@ public class ModoPlaid extends ModoNormal {
     public void aceleracaoPlaid() {
         carro.acelerar(25);
     }
+    
 }

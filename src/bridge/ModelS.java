@@ -9,55 +9,73 @@ package bridge;
  * @author joaov
  */
 public class ModelS implements Carro {
-
+    private boolean carroLigado = false;
+    private boolean farolLigado = false;
+    private String marcha = "N";
+    private int velocidade = 0;
+    private boolean radio = false;
+   
+    
     @Override
     public boolean carroligado() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+	return carroLigado;
     }
 
     @Override
     public void partida() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        carroLigado = true;
     }
 
     @Override
     public void desligamento() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        carroLigado = false;
     }
 
     @Override
     public String getMarcha() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return marcha;
     }
 
     @Override
     public void setMarcha(String marcha) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.marcha = marcha;
     }
 
     @Override
     public boolean farolLigado() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return farolLigado;
     }
 
     @Override
     public void ligarFarol() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        farolLigado = true;
     }
 
     @Override
     public void desligarFarol() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        farolLigado = false;
     }
 
     @Override
     public void acelerar(int velocidade) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.velocidade = velocidade;
     }
 
     @Override
     public void frear(int velocidade) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.velocidade = velocidade;	
+    }
+
+    @Override
+    public String toString() {
+        return "ModelS{" + "carroLigado=" + carroLigado + ", farolLigado=" + farolLigado + ", marcha=" + marcha + ", velocidade=" + velocidade + ", radio=" + radio + '}';
+    }
+
+    
+    
+    public void ligarRadio(){
+        this.radio = true;
+        System.out.println("ModelS-Radio sendo ligado"); 
     }
     
 }

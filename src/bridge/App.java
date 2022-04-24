@@ -17,11 +17,24 @@ public class App {
     public static void main(String[] args) {
         // TODO code application logic here
         testarCarro(new Model3());
+        testarCarro(new ModelS());
+        testarCarro(new ModelX());
+        testarCarro(new ModelY());
+        
+       
+
+        //testarCarro(new Model3());
+        
     }
     public static void testarCarro(Carro carro) {
-		ModoNormal M1 = new ModoNormal(carro);
-		M1.ligarCarro();
-		M1.toString();	
-	}
+        ModoNormal M1 = new ModoNormal(carro);
+        M1.ligarCarro();
+        M1.acelerar();
+        M1.frear();
+        M1.ligarFarol();
+        M1.desligarFarol();
+        System.out.println(M1.toString());   
+                
+    }
     
 }

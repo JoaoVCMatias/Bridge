@@ -15,4 +15,5 @@ public interface Modo {
     void desligarFarol();
     void acelerar();
     void frear();
+  
 }
