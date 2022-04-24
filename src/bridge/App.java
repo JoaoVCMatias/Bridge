@@ -16,12 +16,14 @@ public class App {
     
     public static void main(String[] args) {
         // TODO code application logic here
+        
         testarCarro(new Model3());
         testarCarro(new ModelS());
         testarCarro(new ModelX());
         testarCarro(new ModelY());
         
-       
+        ModoPlaid l1 = new ModoPlaid(new Model3());
+        System.out.println(l1.toString());
 
         //testarCarro(new Model3());
         
