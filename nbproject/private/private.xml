@@ -3,15 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Documentos/IFba/2021.1/PP/Scripts/Estudo%20de%20Caso/Bridge/src/bridge/ModoNormal.java</file>
-            <file>file:/D:/Documentos/IFba/2021.1/PP/Scripts/Estudo%20de%20Caso/Bridge/src/bridge/ModelX.java</file>
-            <file>file:/D:/Documentos/IFba/2021.1/PP/Scripts/Estudo%20de%20Caso/Bridge/src/bridge/ModelY.java</file>
-            <file>file:/D:/Documentos/IFba/2021.1/PP/Scripts/Estudo%20de%20Caso/Bridge/src/bridge/ModoPlaid.java</file>
-            <file>file:/D:/Documentos/IFba/2021.1/PP/Scripts/Estudo%20de%20Caso/Bridge/src/bridge/Modo.java</file>
-            <file>file:/D:/Documentos/IFba/2021.1/PP/Scripts/Estudo%20de%20Caso/Bridge/src/bridge/App.java</file>
-            <file>file:/D:/Documentos/IFba/2021.1/PP/Scripts/Estudo%20de%20Caso/Bridge/src/bridge/Model3.java</file>
-            <file>file:/D:/Documentos/IFba/2021.1/PP/Scripts/Estudo%20de%20Caso/Bridge/src/bridge/Carro.java</file>
-            <file>file:/D:/Documentos/IFba/2021.1/PP/Scripts/Estudo%20de%20Caso/Bridge/src/bridge/ModelS.java</file>
+            <file>file:/D:/Bridge-main/src/bridge/ModelS.java</file>
+            <file>file:/D:/Bridge-main/src/bridge/App.java</file>
+            <file>file:/D:/Bridge-main/src/bridge/ModoNormal.java</file>
+            <file>file:/D:/Bridge-main/src/bridge/ModoPlaid.java</file>
+            <file>file:/D:/Bridge-main/src/bridge/Modo.java</file>
+            <file>file:/D:/Bridge-main/src/bridge/ModelY.java</file>
+            <file>file:/D:/Bridge-main/src/bridge/Model3.java</file>
+            <file>file:/D:/Bridge-main/src/bridge/ModelX.java</file>
         </group>
     </open-files>
 </project-private>

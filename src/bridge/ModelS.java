@@ -13,7 +13,7 @@ public class ModelS implements Carro {
     private boolean farolLigado = false;
     private String marcha = "N";
     private int velocidade = 0;
-    private boolean radio = false;
+    private boolean radio = true;
    
     
     @Override

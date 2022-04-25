@@ -8,17 +8,12 @@ package bridge;
  *
  * @author joaov
  */
-public class ModoPlaid implements Modo {
-    public Carro carro;
+public class ModoPlaid extends ModoNormal {
     private boolean pilotoAutomatico;
-
-		
-    public ModoPlaid() {}
-
-    public ModoPlaid(Carro carro) {
-        this.carro = carro;
-    }
     
+    public ModoPlaid(Carro carro) {
+        super(carro);
+    }
     public void ligarPiloto(){
         this.pilotoAutomatico = true;
         System.out.println("Piloto automatico ligado");
@@ -27,46 +22,11 @@ public class ModoPlaid implements Modo {
         this.pilotoAutomatico = false;
         System.out.println("Piloto automatico desligado");
     }
-    @Override
-    public void ligarCarro() {
-        System.out.println("Bot�o de ligar pressionado");
-        carro.partida();
-        System.out.println("Vruuuum!!! O possante foi ligado");
-    }
-
-    @Override
-    public void alterarMarcha(String marcha) {
-        carro.setMarcha(marcha);
-    }
-
-    @Override
-    public void ligarFarol() {
-        carro.ligarFarol();
-    }
-
-    @Override
-    public void desligarFarol() {
-        carro.desligarFarol();
-    }
-
-    @Override
-    public void acelerar() {
-        this.carro.acelerar(10);
-    }
-
-    @Override
-    public void frear() {
-        carro.frear(10);
-    }
 
     @Override
     public String toString() {
-        return "ModoPlaid{" + "carro=" + carro + ", pilotoAutomatico=" + pilotoAutomatico + '}';
+        return "ModoPlaid{" + "carro= " + carro + '}';
     }
-
-    
-    
-    
     
     
 }

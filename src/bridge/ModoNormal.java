@@ -9,7 +9,7 @@ package bridge;
  * @author joaov
  */
 public class ModoNormal implements Modo {
-    public Carro carro;
+    protected Carro carro;
 
 		
     public ModoNormal() {}
@@ -20,7 +20,7 @@ public class ModoNormal implements Modo {
 
     @Override
     public void ligarCarro() {
-        System.out.println("Bot�o de ligar pressionado");
+        System.out.println("Botao de ligar pressionado");
         carro.partida();
         System.out.println("Vruuuum!!! O possante foi ligado");
     }

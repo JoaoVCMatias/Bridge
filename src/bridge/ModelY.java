@@ -13,8 +13,8 @@ public class ModelY implements Carro {
     private boolean farolLigado = false;
     private String marcha = "N";
     private int velocidade = 0;
-    private boolean tv = false;
-    private boolean radio = false;
+    private boolean tv = true;
+    private boolean radio = true;
     
 
     @Override
@@ -72,18 +72,4 @@ public class ModelY implements Carro {
         return "ModelY{" + "carroLigado=" + carroLigado + ", farolLigado=" + farolLigado + ", marcha=" + marcha + ", velocidade=" + velocidade + ", tv=" + tv + ", radio=" + radio + '}';
     }
 
-    
-    public void aqui(){ 
-        System.out.println("oi");
-    }
-    
-    public void ligarTv(){ 
-        this.tv = true;
-        System.out.println("ModelY-TV sendo ligada");
-    }
-    public void ligarRadio(){
-        this.radio = true;
-        System.out.println("ModelY-Radio sendo ligado"); 
-    }
-   
 }

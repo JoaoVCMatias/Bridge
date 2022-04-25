@@ -13,7 +13,7 @@ public class Model3 implements Carro{
     private boolean farolLigado = false;
     private String marcha = "N";
     public int velocidade = 0;
-    private boolean tv = false;
+    private boolean tv = true;
 
     
     @Override
@@ -70,12 +70,5 @@ public class Model3 implements Carro{
     public String toString() {
         return "Model3{" + "carroLigado=" + carroLigado + ", farolLigado=" + farolLigado + ", marcha=" + marcha + ", velocidade=" + velocidade + ", tv=" + tv + '}';
     }
-
-    
-    
-    public void ligarTv(){ 
-        System.out.println("ModelY-Tv sendo ligada");
-    }
-        
     
 }
